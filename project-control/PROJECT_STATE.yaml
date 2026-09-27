@@ -1,0 +1,18 @@
+schema_version: "1.0"
+project: "CL3 unified v2/v3"
+updated_at: "2026-09-27T22:01:54+08:00"
+control_repository: "michael0731/cl3-suite"
+authority: {runtime: "REVIEW_ONLY", execution: "OUT_OF_SCOPE"}
+current_gate: {id: "ISSUE127_FINAL_GOVERNANCE_CLOSEOUT", status: "PASS_REBOUND", terminal: true}
+repositories:
+  v2: {commit: "beed0ff57c77a8dc104bc01fa3f7a851b13f366c", tracked_clean: true, preserved_untracked_count: 8, status_sha256: "deb2386f3198bdeb4411c8b0d34ff5ecb088911beb05a44cf85ce91599fea655"}
+  v3: {commit: "83ed5b5983a261c9ed7cbbeb5bedf00574904feb", tracked_clean: true, preserved_untracked_count: 26, status_sha256: "ca85d1a0fa9bea56b242c09173fcd430ce8716bb01b653cd6ba58ea2761a2b66"}
+issue_127: {state: "closed", state_reason: "completed", closed_at: "2026-09-27T21:43:16+08:00", evidence_comment_id: 5856380496, marker: "ISSUE127_FINAL_PASS_REBOUND_BEED0FF_83ED5B5"}
+acceptance: {observation_date: "2026-09-26", latest_completed_market_session: "2026-09-25", previous_market_session: "2026-09-24", v2_result: "PLAN_ONLY_NO_CHANGE", v3_trust: "TRUSTED", v3_parity: "MATCH", source_run_id: "20260926_233002", snapshot_hash_lineage_verified: true}
+safety: {manual_rerun: false, code_change: false, deployment: false, runtime_write: false, database_write: false, broker_write: false, order_action: false, service_operation: false}
+do_not_repeat:
+  - "Reimplement or remerge Issue #127"
+  - "Rerun or rebuild 2026-09-26 evidence"
+  - "Clean preserved v2/v3 untracked artifacts"
+  - "Use cb1c5a1 as current v2 main"
+  - "Reopen Issue #127 for later regression"
